@@ -24,7 +24,7 @@ void deleteTree(Node* root)
 		delete root;
 		return;
 	}
-	for (auto& a : root->children) {
+	for (Node* a : root->children) {
 		a->children.clear();
 		deleteTree(a);
 	}
@@ -62,7 +62,7 @@ std::string rootCannonicalName(Node* const root)
 
 		std::vector<std::string> children;
 		Node* tmp = new Node();
-		for (auto& a : root->children) {
+		for (Node* a : root->children) {
 			children.emplace_back(rootCannonicalName(a));
 		}
 		std::sort(children.begin(), children.end());
@@ -74,7 +74,7 @@ std::string rootCannonicalName(Node* const root)
 			[](std::string l, std::string r) { return l.length() > r.length(); }
 		);
 		std::string res = "1";
-		for (auto& a : children) {
+		for (Node* a : children) {
 			res += a;
 		}
 		res += "0";
