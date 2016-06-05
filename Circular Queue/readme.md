@@ -1,11 +1,11 @@
 #Circular Queue
 
-* This header file contains all the declarations and definitions of the *Circular Queue*
+This header file contains all the declarations and definitions of the *Circular Queue*
 
 If you change the initial capacity it must be a power of two.
 
 This circular queue is a linear data structure that uses an array to store the data. If there are no more free cells 
-at the end of the array but there are free at the begining the queue applies MOD2 to the tail index and starts writing to the beggining of the array. When the head and 
+at the end of the array but there are free at the begining the queue applies MOD2 to the tail index and starts writing tothe beggining of the array. When the head and 
 tail indices meet then the array is resized.
 
 ##How to use it?
