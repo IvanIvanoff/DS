@@ -1,6 +1,6 @@
-# Èçîìîðôèçúì íà äúðâåòà
+# Ð˜Ð·Ð¾Ð¼Ð¾Ñ€Ñ„Ð¸Ð·ÑŠÐ¼ Ð½Ð° Ð´ÑŠÑ€Ð²ÐµÑ‚Ð°
 
-* Èçïîëçâàí àëãîðèòúì: *Algorithm by Aho, Hopcroft and Ullman*
+* Ð˜Ð·Ð¿Ð¾Ð»Ð·Ð²Ð°Ð½ Ð°Ð»Ð³Ð¾Ñ€Ð¸Ñ‚ÑŠÐ¼: *Algorithm by Aho, Hopcroft and Ullman*
 > Source: http://logic.pdmi.ras.ru/~smal/files/smal_jass08_slides.pdf
 
 
