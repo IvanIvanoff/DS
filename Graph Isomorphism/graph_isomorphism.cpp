@@ -135,20 +135,28 @@ Node* buildTree(std::string& line)
 	return root;
 }
 
-int main()
-{
-	std::string t1, t2;
-	std::getline(std::cin, t1);
-	std::getline(std::cin, t2);
+bool are_isomorphic(const std::string& t1, const std::string& t1){
 	Node* t1_root = buildTree(t1);
 	Node* t2_root = buildTree(t2);
 	std::string t1_canonicalName = rootCannonicalName(t1_root);
 	std::string t2_canonicalName = rootCannonicalName(t2_root);
 
-	std::string equal = (t1_canonicalName.compare(t2_canonicalName) == 0) ? "YES" : "NO";
-	std::cout << equal << std::endl;
-
 	deleteTree(t1_root);
 	deleteTree(t2_root);
+
+	return (t1_canonicalName.compare(t2_canonicalName) == 0);
+}
+
+int main()
+{
+	std::string t1, t2;
+	std::getline(std::cin, t1);
+	std::getline(std::cin, t2);
+
+	if(are_isomorphic(t1,t1)){
+		std::cout<<"The trees are isomorphic!\n";
+	}else{
+		std::cout<<"The trees are not isomorphic or the input is incorrect!\n";
+	}
 	return 0;
 }
